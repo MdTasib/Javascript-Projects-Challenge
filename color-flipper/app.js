@@ -14,7 +14,7 @@ const btn = document.getElementById('btn');
 const color = document.querySelector('.color');
 
 btn.addEventListener('click', function () {
-	// get random number between ( 0 - 3 )
+	// get random number
 	const randomNumber = getRandomNumber();
 
 	document.body.style.background = colors[randomNumber];
