@@ -207,7 +207,6 @@ Questions
 	text-transform: capitalize;
 	padding-bottom: 1rem;
 }
-
 .question-title p {
 	margin-bottom: 0;
 	letter-spacing: var(--spacing);
@@ -231,7 +230,6 @@ Questions
 .question-text p {
 	margin-bottom: 0;
 }
-/* hide text */
 .question-text {
 	display: none;
 }
