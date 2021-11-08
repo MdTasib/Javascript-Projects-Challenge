@@ -21,7 +21,7 @@ between1To5.addEventListener('click', function () {
 		) {
 			document.querySelector('.greet').textContent = 'You Win';
 			document.querySelector('body').style.background = '#fff';
-			document.querySelector('.number').textContent = score;
+			document.querySelector('.number').textContent = randomNumber;
 
 			if (score > highScore) {
 				highScore = score;
@@ -52,7 +52,7 @@ between6To10.addEventListener('click', function () {
 		) {
 			document.querySelector('.greet').textContent = 'You Win';
 			document.querySelector('body').style.background = '#fff';
-			document.querySelector('.number').textContent = score;
+			document.querySelector('.number').textContent = randomNumber;
 
 			if (score > highScore) {
 				highScore = score;
@@ -83,7 +83,7 @@ between11To15.addEventListener('click', function () {
 		) {
 			document.querySelector('.greet').textContent = 'You Win';
 			document.querySelector('body').style.background = '#fff';
-			document.querySelector('.number').textContent = score;
+			document.querySelector('.number').textContent = randomNumber;
 
 			if (score > highScore) {
 				highScore = score;
@@ -114,7 +114,7 @@ between16To20.addEventListener('click', function () {
 		) {
 			document.querySelector('.greet').textContent = 'You Win';
 			document.querySelector('body').style.background = '#fff';
-			document.querySelector('.number').textContent = score;
+			document.querySelector('.number').textContent = randomNumber;
 
 			if (score > highScore) {
 				highScore = score;
@@ -145,7 +145,7 @@ between21To25.addEventListener('click', function () {
 		) {
 			document.querySelector('.greet').textContent = 'You Win';
 			document.querySelector('body').style.background = '#fff';
-			document.querySelector('.number').textContent = score;
+			document.querySelector('.number').textContent = randomNumber;
 
 			if (score > highScore) {
 				highScore = score;
@@ -176,7 +176,7 @@ between26To30.addEventListener('click', function () {
 		) {
 			document.querySelector('.greet').textContent = 'You Win';
 			document.querySelector('body').style.background = '#fff';
-			document.querySelector('.number').textContent = score;
+			document.querySelector('.number').textContent = randomNumber;
 
 			if (score > highScore) {
 				highScore = score;
@@ -194,4 +194,14 @@ between26To30.addEventListener('click', function () {
 			}
 		}
 	}
+});
+
+document.querySelector('.playAgain').addEventListener('click', function () {
+	randomNumber = Math.trunc(Math.random() * 30 + 1);
+	score = 4;
+
+	document.querySelector('.score_num').textContent = score;
+	document.querySelector('.greet').textContent = 'Lets play again';
+	document.querySelector('body').style.background = '#ddd';
+	document.querySelector('.number').textContent = '?';
 });
