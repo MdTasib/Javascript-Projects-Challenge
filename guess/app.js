@@ -1,5 +1,6 @@
 let randomNumber = Math.trunc(Math.random() * 30 + 1);
 let score = 4;
+let highScore = 0;
 console.log(randomNumber);
 
 const between1To5 = document.querySelector('.one_five');
@@ -20,10 +21,22 @@ between1To5.addEventListener('click', function () {
 		) {
 			document.querySelector('.greet').textContent = 'You Win';
 			document.querySelector('body').style.background = '#fff';
+			document.querySelector('.number').textContent = score;
+
+			if (score > highScore) {
+				highScore = score;
+				document.querySelector('.high__score_num').textContent = highScore;
+			}
 		} else {
-			document.querySelector('.greet').textContent = 'Number Not Match';
-			score--;
-			document.querySelector('.score_num').textContent = score;
+			if (score > 1) {
+				document.querySelector('.greet').textContent = 'Number Not Match';
+				score--;
+				document.querySelector('.score_num').textContent = score;
+			} else {
+				document.querySelector('.greet').textContent = 'You lose the game';
+				score--;
+				document.querySelector('.score_num').textContent = score;
+			}
 		}
 	}
 });
@@ -39,10 +52,22 @@ between6To10.addEventListener('click', function () {
 		) {
 			document.querySelector('.greet').textContent = 'You Win';
 			document.querySelector('body').style.background = '#fff';
+			document.querySelector('.number').textContent = score;
+
+			if (score > highScore) {
+				highScore = score;
+				document.querySelector('.high__score_num').textContent = highScore;
+			}
 		} else {
-			document.querySelector('.greet').textContent = 'Number Not Match';
-			score--;
-			document.querySelector('.score_num').textContent = score;
+			if (score > 1) {
+				document.querySelector('.greet').textContent = 'Number Not Match';
+				score--;
+				document.querySelector('.score_num').textContent = score;
+			} else {
+				document.querySelector('.greet').textContent = 'You lose the game';
+				score--;
+				document.querySelector('.score_num').textContent = score;
+			}
 		}
 	}
 });
@@ -58,10 +83,22 @@ between11To15.addEventListener('click', function () {
 		) {
 			document.querySelector('.greet').textContent = 'You Win';
 			document.querySelector('body').style.background = '#fff';
+			document.querySelector('.number').textContent = score;
+
+			if (score > highScore) {
+				highScore = score;
+				document.querySelector('.high__score_num').textContent = highScore;
+			}
 		} else {
-			document.querySelector('.greet').textContent = 'Number Not Match';
-			score--;
-			document.querySelector('.score_num').textContent = score;
+			if (score > 1) {
+				document.querySelector('.greet').textContent = 'Number Not Match';
+				score--;
+				document.querySelector('.score_num').textContent = score;
+			} else {
+				document.querySelector('.greet').textContent = 'You lose the game';
+				score--;
+				document.querySelector('.score_num').textContent = score;
+			}
 		}
 	}
 });
@@ -77,10 +114,22 @@ between16To20.addEventListener('click', function () {
 		) {
 			document.querySelector('.greet').textContent = 'You Win';
 			document.querySelector('body').style.background = '#fff';
+			document.querySelector('.number').textContent = score;
+
+			if (score > highScore) {
+				highScore = score;
+				document.querySelector('.high__score_num').textContent = highScore;
+			}
 		} else {
-			document.querySelector('.greet').textContent = 'Number Not Match';
-			score--;
-			document.querySelector('.score_num').textContent = score;
+			if (score > 1) {
+				document.querySelector('.greet').textContent = 'Number Not Match';
+				score--;
+				document.querySelector('.score_num').textContent = score;
+			} else {
+				document.querySelector('.greet').textContent = 'You lose the game';
+				score--;
+				document.querySelector('.score_num').textContent = score;
+			}
 		}
 	}
 });
@@ -96,10 +145,22 @@ between21To25.addEventListener('click', function () {
 		) {
 			document.querySelector('.greet').textContent = 'You Win';
 			document.querySelector('body').style.background = '#fff';
+			document.querySelector('.number').textContent = score;
+
+			if (score > highScore) {
+				highScore = score;
+				document.querySelector('.high__score_num').textContent = highScore;
+			}
 		} else {
-			document.querySelector('.greet').textContent = 'Number Not Match';
-			score--;
-			document.querySelector('.score_num').textContent = score;
+			if (score > 1) {
+				document.querySelector('.greet').textContent = 'Number Not Match';
+				score--;
+				document.querySelector('.score_num').textContent = score;
+			} else {
+				document.querySelector('.greet').textContent = 'You lose the game';
+				score--;
+				document.querySelector('.score_num').textContent = score;
+			}
 		}
 	}
 });
@@ -115,10 +176,22 @@ between26To30.addEventListener('click', function () {
 		) {
 			document.querySelector('.greet').textContent = 'You Win';
 			document.querySelector('body').style.background = '#fff';
+			document.querySelector('.number').textContent = score;
+
+			if (score > highScore) {
+				highScore = score;
+				document.querySelector('.high__score_num').textContent = highScore;
+			}
 		} else {
-			document.querySelector('.greet').textContent = 'Number Not Match';
-			score--;
-			document.querySelector('.score_num').textContent = score;
+			if (score > 1) {
+				document.querySelector('.greet').textContent = 'Number Not Match';
+				score--;
+				document.querySelector('.score_num').textContent = score;
+			} else {
+				document.querySelector('.greet').textContent = 'You lose the game';
+				score--;
+				document.querySelector('.score_num').textContent = score;
+			}
 		}
 	}
 });
