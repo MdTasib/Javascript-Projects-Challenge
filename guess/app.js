@@ -10,6 +10,25 @@ const between16To20 = document.querySelector('.sixteen_twenty');
 const between21To25 = document.querySelector('.twentyone_twentyfive');
 const between26To30 = document.querySelector('.twentysix_thirty');
 
+function winingGreet() {
+	document.querySelector('.greet').textContent = 'You Win';
+	document.querySelector('body').style.background = '#fff';
+	document.querySelector('.number').textContent = randomNumber;
+
+	if (score > highScore) {
+		highScore = score;
+		document.querySelector('.high__score_num').textContent = highScore;
+	}
+}
+
+function loseIngGreet() {
+	score > 1
+		? (document.querySelector('.greet').textContent = 'Number Not Match')
+		: (document.querySelector('.greet').textContent = 'You lose the game');
+	score--;
+	document.querySelector('.score_num').textContent = score;
+}
+
 between1To5.addEventListener('click', function () {
 	if (score > 0) {
 		if (
@@ -19,24 +38,9 @@ between1To5.addEventListener('click', function () {
 			randomNumber === 4 ||
 			randomNumber === 5
 		) {
-			document.querySelector('.greet').textContent = 'You Win';
-			document.querySelector('body').style.background = '#fff';
-			document.querySelector('.number').textContent = randomNumber;
-
-			if (score > highScore) {
-				highScore = score;
-				document.querySelector('.high__score_num').textContent = highScore;
-			}
+			winingGreet();
 		} else {
-			if (score > 1) {
-				document.querySelector('.greet').textContent = 'Number Not Match';
-				score--;
-				document.querySelector('.score_num').textContent = score;
-			} else {
-				document.querySelector('.greet').textContent = 'You lose the game';
-				score--;
-				document.querySelector('.score_num').textContent = score;
-			}
+			loseIngGreet();
 		}
 	}
 });
@@ -50,24 +54,9 @@ between6To10.addEventListener('click', function () {
 			randomNumber === 9 ||
 			randomNumber === 10
 		) {
-			document.querySelector('.greet').textContent = 'You Win';
-			document.querySelector('body').style.background = '#fff';
-			document.querySelector('.number').textContent = randomNumber;
-
-			if (score > highScore) {
-				highScore = score;
-				document.querySelector('.high__score_num').textContent = highScore;
-			}
+			winingGreet();
 		} else {
-			if (score > 1) {
-				document.querySelector('.greet').textContent = 'Number Not Match';
-				score--;
-				document.querySelector('.score_num').textContent = score;
-			} else {
-				document.querySelector('.greet').textContent = 'You lose the game';
-				score--;
-				document.querySelector('.score_num').textContent = score;
-			}
+			loseIngGreet();
 		}
 	}
 });
@@ -81,24 +70,9 @@ between11To15.addEventListener('click', function () {
 			randomNumber === 14 ||
 			randomNumber === 15
 		) {
-			document.querySelector('.greet').textContent = 'You Win';
-			document.querySelector('body').style.background = '#fff';
-			document.querySelector('.number').textContent = randomNumber;
-
-			if (score > highScore) {
-				highScore = score;
-				document.querySelector('.high__score_num').textContent = highScore;
-			}
+			winingGreet();
 		} else {
-			if (score > 1) {
-				document.querySelector('.greet').textContent = 'Number Not Match';
-				score--;
-				document.querySelector('.score_num').textContent = score;
-			} else {
-				document.querySelector('.greet').textContent = 'You lose the game';
-				score--;
-				document.querySelector('.score_num').textContent = score;
-			}
+			loseIngGreet();
 		}
 	}
 });
@@ -112,24 +86,9 @@ between16To20.addEventListener('click', function () {
 			randomNumber === 19 ||
 			randomNumber === 20
 		) {
-			document.querySelector('.greet').textContent = 'You Win';
-			document.querySelector('body').style.background = '#fff';
-			document.querySelector('.number').textContent = randomNumber;
-
-			if (score > highScore) {
-				highScore = score;
-				document.querySelector('.high__score_num').textContent = highScore;
-			}
+			winingGreet();
 		} else {
-			if (score > 1) {
-				document.querySelector('.greet').textContent = 'Number Not Match';
-				score--;
-				document.querySelector('.score_num').textContent = score;
-			} else {
-				document.querySelector('.greet').textContent = 'You lose the game';
-				score--;
-				document.querySelector('.score_num').textContent = score;
-			}
+			loseIngGreet();
 		}
 	}
 });
@@ -143,24 +102,9 @@ between21To25.addEventListener('click', function () {
 			randomNumber === 24 ||
 			randomNumber === 25
 		) {
-			document.querySelector('.greet').textContent = 'You Win';
-			document.querySelector('body').style.background = '#fff';
-			document.querySelector('.number').textContent = randomNumber;
-
-			if (score > highScore) {
-				highScore = score;
-				document.querySelector('.high__score_num').textContent = highScore;
-			}
+			winingGreet();
 		} else {
-			if (score > 1) {
-				document.querySelector('.greet').textContent = 'Number Not Match';
-				score--;
-				document.querySelector('.score_num').textContent = score;
-			} else {
-				document.querySelector('.greet').textContent = 'You lose the game';
-				score--;
-				document.querySelector('.score_num').textContent = score;
-			}
+			loseIngGreet();
 		}
 	}
 });
@@ -174,24 +118,9 @@ between26To30.addEventListener('click', function () {
 			randomNumber === 29 ||
 			randomNumber === 30
 		) {
-			document.querySelector('.greet').textContent = 'You Win';
-			document.querySelector('body').style.background = '#fff';
-			document.querySelector('.number').textContent = randomNumber;
-
-			if (score > highScore) {
-				highScore = score;
-				document.querySelector('.high__score_num').textContent = highScore;
-			}
+			winingGreet();
 		} else {
-			if (score > 1) {
-				document.querySelector('.greet').textContent = 'Number Not Match';
-				score--;
-				document.querySelector('.score_num').textContent = score;
-			} else {
-				document.querySelector('.greet').textContent = 'You lose the game';
-				score--;
-				document.querySelector('.score_num').textContent = score;
-			}
+			loseIngGreet();
 		}
 	}
 });
